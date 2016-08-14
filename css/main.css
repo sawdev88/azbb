@@ -69,6 +69,13 @@ body {
   margin: 40px 0 0 0;
 }
 
+.nav-phone {
+  position: absolute;
+  bottom: 16px;
+  padding-left: 56px;
+  font-size: 1.2em;
+}
+
 .nav-list a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 2em;
@@ -78,11 +85,6 @@ body {
 .nav-list a:hover {
   color: #fff;
 }
-
-.selected {
-  color: #fff !important;
-}
-
 
 /*HERO*/
 
@@ -163,6 +165,12 @@ body {
 .for-sellers-list, .for-buyers-list, .consulting-list {
   font-size: 1.5em;
   padding-left: 64px;
+  opacity: 0;
+}
+
+.fade-in {
+  transition: 2s ease-in-out;
+  opacity: 1;
 }
 
 .for-sellers {

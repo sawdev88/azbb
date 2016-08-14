@@ -18,3 +18,19 @@ $('body').on('click', hideNav );
 
 // Flash down arrow
 $('.down-arrow').delay(1000).fadeIn(1000).delay(500).fadeOut('slow');
+
+$('body').scroll(function () {
+  var pos = $(this).offset().top;
+
+  if (pos > $('#about').offset().top) {
+    $('.for-sellers-list').addClass('fade-in');
+  }
+
+  if (pos > $('.services-header').offset().top) {
+    $('.consulting-list').addClass('fade-in');
+  }
+
+  if (pos > $('.consulting-content').offset().top) {
+    $('.for-buyers-list').addClass('fade-in');
+  }
+})
