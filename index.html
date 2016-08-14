@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=”description” content="Arizona Bar Brokers was created with one purpose in mind, to be the best bar brokers in Arizona.  Our focus is 100% directed towards the bar business.  We set the standard and make the market for bar properties and bar brokerage transactions.  We bring buyers and sellers together to efficiently complete transactions.">
     <title>Arizona Bar Brokers</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -20,6 +21,7 @@
         <li><a class="selected" href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#broker">Broker</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -73,7 +75,7 @@
             </ul>
           </div>
         </div>
-        <div class="row">
+        <div class="row desktop-consulting">
           <div class="consulting-list col-md-6">
             <p>
               We work with a team of experts who have been vetted over years based off of world class excellent execution and immaculate reputation.  If your bar is not performing to its maximum capacity, we can help develop and help <em>execute</em> a strategy to get you on the right path.  Our consulting services involve partners in financial controls, inventory controls, front and back of house operations, and promotions.  Our team is world class, as our the results.
@@ -86,6 +88,21 @@
             <figure class="service-icon">
               <i class="fa fa-cogs" aria-hidden="true"></i>
             </figure>
+          </div>
+        </div>
+        <div class="row mobile-consulting">
+          <div class="consulting col-md-6 text-center">
+            <figcaption class="service-icon-caption">
+              Consulting
+            </figcaption>
+            <figure class="service-icon">
+              <i class="fa fa-cogs" aria-hidden="true"></i>
+            </figure>
+          </div>
+          <div class="consulting-list col-md-6">
+            <p>
+              We work with a team of experts who have been vetted over years based off of world class excellent execution and immaculate reputation.  If your bar is not performing to its maximum capacity, we can help develop and help <em>execute</em> a strategy to get you on the right path.  Our consulting services involve partners in financial controls, inventory controls, front and back of house operations, and promotions.  Our team is world class, as our the results.
+            </p>
           </div>
         </div>
       <div class="row">
@@ -113,11 +130,11 @@
     </div>
     </section>
 
-    <section id="about-me">
-      <div class="about-img">
+    <section id="broker">
+      <div class="broker-img">
         <img src="http://placehold.it/300x400" alt="">
       </div>
-      <div class="about-content">
+      <div class="broker-content">
         <p>
           Justin Wines has over 10 years of business brokerage and commercial real estate transaction experience.  Justin has completed over 100 deals worth a total value in excess of $50 million dollars.
         </p>
@@ -132,12 +149,24 @@
 
     <section id="mailer">
       <form class="mailer-form" action="" method="post">
-        <h3>FREE GUIDE</h3>
-        <label>Are you interested in :</label>
-        <label>Buying<input type="checkbox" name="buying" value=""></label>
-        <label>Selling<input type="checkbox" name="selling" value=""></label>
-        <input type="email" name="email" placeholder="Enter your email:" required>
-        <input type="submit" name="submit" value="Submit">
+        <div class="desktop-form">
+          <h3>FREE GUIDE</h3>
+          <p>Are you interested in :</p>
+          <label>Buying<input type="checkbox" name="buying" value="buying"></label>
+          <label>Selling<input type="checkbox" name="selling" value="selling"></label>
+          <input type="email" name="email" placeholder="Enter your email:" required>
+          <input type="submit" name="submit" value="Submit">
+        </div>
+        <div class="mobile-form">
+          <h3>FREE GUIDE</h3>
+          <p>Are you interested in :</p>
+          <label>Buying<input type="checkbox" name="buying" value="buying"></label>
+          <label>Selling<input type="checkbox" name="selling" value="selling"></label>
+          <br>
+          <input type="email" name="email" placeholder="Enter your email:" required>
+          <br>
+          <input type="submit" name="submit" value="Submit">
+        </div>
       </form>
     </section>
 

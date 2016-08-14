@@ -6,6 +6,7 @@ a:hover {
 html, body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -49,7 +50,7 @@ body {
 
 .side-nav {
   position: fixed;
-  right: -230px;
+  right: -240px;
   top: 0;
   bottom: 0;
   background: #000;
@@ -79,7 +80,6 @@ body {
 }
 
 .selected {
-  border-left: 3px solid #fff;
   color: #fff !important;
 }
 
@@ -183,6 +183,10 @@ body {
   color: rgb(195,102,19);
 }
 
+.mobile-consulting {
+  display: none;
+}
+
 .for-buyers {
   background: rgb(102,19,195);
 }
@@ -194,7 +198,7 @@ body {
 
 /*ABOUT*/
 
-#about-me {
+#broker {
   background: rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #fff;
@@ -202,20 +206,11 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.about-img {
+.broker-img {
   margin-bottom: 48px;
 }
 
-.about-content {
-  font-size: 2em;
-}
-
-/*CONTAT*/
-
-#contact {
-  background: #000;
-  text-align: center;
-  padding: 120px 0;
+.broker-content {
   font-size: 2em;
 }
 
@@ -238,6 +233,10 @@ body {
   padding: 16px;
 }
 
+.desktop-form p {
+  display: inline;
+}
+
 .mailer-form label {
   margin: 0 8px;
 }
@@ -252,6 +251,26 @@ body {
   margin: 0 8px;
 }
 
+.mailer-form input[type="submit"] {
+  border: 1px solid #333;
+}
+
+.mobile-form {
+  display: none;
+}
+
+/*CONTAT*/
+
+#contact {
+  background: #000;
+  text-align: center;
+  padding: 120px 0;
+  font-size: 2em;
+}
+
+.contact-content, .contact-content a {
+  color: rgba(255, 255, 255, 0.7);
+}
 
 /*FOOTER*/
 
@@ -271,5 +290,39 @@ body {
   }
   .consulting-list {
     padding-top: 48px;
+  }
+}
+
+@media (max-width: 990px) {
+  .desktop-consulting {
+    display: none;
+  }
+  .mobile-consulting {
+    display: block;
+  }
+  .for-sellers-list, .for-buyers-list, .consulting-list {
+    padding-bottom: 40px;
+  }
+  .mailer-form h3 {
+    display: block;
+  }
+}
+
+@media (max-width:480px) {
+  .hero-header {
+    padding-left: 8px;
+  }
+  #about, #broker {
+    padding: 80px 16px;
+  }
+  .desktop-form {
+    display: none;
+  }
+  .mobile-form {
+    display: block;
+  }
+  .mailer-form input[type="email"]{
+    width: 80%;
+    margin: 16px 0;
   }
 }
