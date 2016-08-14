@@ -1,3 +1,8 @@
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
   background: url('../img/bar_bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -10,6 +15,68 @@ body {
   color: #fff;
 }
 
+/*NAV*/
+
+.show-nav {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2em;
+}
+
+.hide-nav {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.show-nav:hover, .hide-nav:hover {
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: .2s ease-out;
+}
+
+.side-nav {
+  position: fixed;
+  right: -220px;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  transition: .1s;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 80px 0 0 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 40px 0 0 0;
+}
+
+.nav-list a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2em;
+  padding: 0 56px 0;
+}
+
+.nav-list a:hover {
+  color: #fff;
+}
+
+.selected {
+  border-left: 3px solid #fff;
+  color: #fff !important;
+}
+
+
+/*HERO*/
+
 .hero {
   position: absolute;
   bottom: 0;
@@ -21,11 +88,11 @@ body {
 .hero-header {
   padding-left: 40px;
   font-size: 6em;
-  margin-bottom: 0;
+  margin: 80px 0 0 0;
 }
 
 .hero-desc {
-  padding: 0 0 64px 112px;
+  padding: 0 0 64px 5%;
   margin-top: 0;
   font-size: 1.6em;
 }
