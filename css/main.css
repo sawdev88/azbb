@@ -13,6 +13,7 @@ body {
   width: 100%;
   font-family: 'Raleway', sans-serif;
   color: #fff;
+  position: absolute;
 }
 
 /*NAV*/
@@ -23,6 +24,7 @@ body {
   right: 2%;
   color: rgba(255, 255, 255, 0.7);
   font-size: 2em;
+  z-index: 1001;
 }
 
 .hide-nav {
@@ -47,12 +49,14 @@ body {
   bottom: 0;
   background: #000;
   transition: .1s;
+  z-index: 1002;
 }
 
 .nav-list {
   list-style: none;
   margin: 80px 0 0 0;
   padding: 0;
+  z-index: 1002;
 }
 
 .nav-list li {
@@ -78,22 +82,20 @@ body {
 /*HERO*/
 
 .hero {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: 38%;
   background: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero-header {
-  padding-left: 40px;
+  padding-left: 80px;
   font-size: 6em;
-  margin: 80px 0 0 0;
+  margin: 120px 0 0 0;
 }
 
 .hero-desc {
-  padding: 0 0 64px 5%;
-  margin-top: 0;
+  padding: 0 0 120px 10%;
+  margin: 0;
   font-size: 1.6em;
 }
 
@@ -105,4 +107,82 @@ body {
   font-size: 2em;
   color: rgba(255, 255, 255, 0.7);
   display: none;
+}
+
+/*ABOUT*/
+
+#about {
+  background: #fff;
+  color: #000;
+  padding: 120px 120px;
+  font-size: 2em;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/*SERVICES*/
+
+#services {
+  margin-top: 0;
+}
+
+.services-header {
+  background: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px 0;
+  text-align: center;
+}
+
+.services-header h2 {
+  font-size: 2.5em;
+}
+
+.services-content {
+  background: #fff;
+  color: #000;
+}
+
+.service-icon-caption {
+  font-size: 3em;
+}
+
+.service-icon {
+  font-size: 4em;
+}
+
+.for-sellers, .for-buyers, .consulting {
+  color: #fff;
+  padding: 124px 0;
+}
+
+.for-sellers-list, .for-buyers-list, .consulting-list {
+  font-size: 1.5em;
+  padding-left: 40px;
+}
+
+.for-sellers {
+  background: rgb(19,195,102);
+}
+
+.for-sellers-list {
+  color: rgb(19,195,102);
+  padding-top: 40px;
+}
+
+.consulting {
+  background: rgb(195,102,19);
+}
+
+.consulting-list {
+  padding: 80px 48px 48px;
+  color: rgb(195,102,19);
+}
+
+.for-buyers {
+  background: rgb(102,19,195);
+}
+
+.for-buyers-list {
+  color: rgb(102,19,195);
+  padding-top: 80px;
 }
