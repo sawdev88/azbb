@@ -1,0 +1,31 @@
+body {
+  background: url('../img/bar_bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+.hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-header {
+  padding-left: 40px;
+  font-size: 6em;
+  margin-bottom: 0;
+}
+
+.hero-desc {
+  padding: 0 0 64px 112px;
+  margin-top: 0;
+  font-size: 1.6em;
+}
