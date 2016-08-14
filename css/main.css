@@ -96,3 +96,13 @@ body {
   margin-top: 0;
   font-size: 1.6em;
 }
+
+.down-arrow {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  color: #fff;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.7);
+  display: none;
+}
