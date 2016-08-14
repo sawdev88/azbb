@@ -27,7 +27,7 @@ body {
   position: fixed;
   top: 2%;
   right: 2%;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(200, 200, 200, 0.6);
   font-size: 2em;
   z-index: 1001;
 }
@@ -179,7 +179,7 @@ body {
 }
 
 .consulting-list {
-  padding: 80px 48px 48px;
+  padding: 80px 48px 0;
   color: rgb(195,102,19);
 }
 
@@ -263,4 +263,13 @@ body {
   height: 400px;
   text-align: center;
   vertical-align: bottom;
+}
+
+@media (max-width: 1400px) {
+  .hero {
+    margin-top: 30%;
+  }
+  .consulting-list {
+    padding-top: 48px;
+  }
 }
