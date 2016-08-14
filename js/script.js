@@ -26,11 +26,11 @@ $('body').scroll(function () {
     $('.for-sellers-list').addClass('fade-in');
   }
 
-  if (pos > $('.services-header').offset().top) {
+  if (pos > $('.services-header').offset().top - 200) {
     $('.consulting-list').addClass('fade-in');
   }
 
-  if (pos > $('.consulting-content').offset().top) {
+  if (pos > ($('.consulting-content').offset().top - 500)) {
     $('.for-buyers-list').addClass('fade-in');
   }
 })
