@@ -3,10 +3,12 @@ a:hover {
   cursor: pointer;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  word-wrap: break-word;
 }
 
 body {
@@ -21,6 +23,7 @@ body {
   color: #fff;
   position: absolute;
 }
+
 
 /*NAV*/
 
@@ -41,7 +44,8 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.show-nav:hover, .hide-nav:hover {
+.show-nav:hover,
+.hide-nav:hover {
   color: #fff;
   cursor: pointer;
   transform: scale(1.1);
@@ -86,6 +90,7 @@ body {
   color: #fff;
 }
 
+
 /*HERO*/
 
 .hero {
@@ -116,6 +121,7 @@ body {
   display: none;
 }
 
+
 /*ABOUT*/
 
 #about {
@@ -126,6 +132,7 @@ body {
   text-align: justify;
   margin-bottom: 0;
 }
+
 
 /*SERVICES*/
 
@@ -157,15 +164,19 @@ body {
   font-size: 4em;
 }
 
-.for-sellers, .for-buyers, .consulting {
+.for-sellers,
+.for-buyers,
+.consulting {
   color: #fff;
   padding: 124px 0;
 }
 
-.for-sellers-list, .for-buyers-list, .consulting-list {
+.for-sellers-list,
+.for-buyers-list,
+.consulting-list {
   font-size: 1.5em;
   padding-left: 64px;
-  opacity: 0;
+  opacity: .3;
 }
 
 .fade-in {
@@ -174,21 +185,21 @@ body {
 }
 
 .for-sellers {
-  background: rgb(19,195,102);
+  background: rgb(19, 195, 102);
 }
 
 .for-sellers-list {
-  color: rgb(19,195,102);
+  color: rgb(19, 195, 102);
   padding-top: 40px;
 }
 
 .consulting {
-  background: rgb(195,102,19);
+  background: rgb(195, 102, 19);
 }
 
 .consulting-list {
   padding: 80px 48px 0;
-  color: rgb(195,102,19);
+  color: rgb(195, 102, 19);
 }
 
 .mobile-consulting {
@@ -196,13 +207,14 @@ body {
 }
 
 .for-buyers {
-  background: rgb(102,19,195);
+  background: rgb(102, 19, 195);
 }
 
 .for-buyers-list {
-  color: rgb(102,19,195);
+  color: rgb(102, 19, 195);
   padding-top: 80px;
 }
+
 
 /*ABOUT*/
 
@@ -222,10 +234,11 @@ body {
   font-size: 2em;
 }
 
+
 /*MAILER*/
 
 #mailer {
-  background: rgb(195,102,19);
+  background: rgb(195, 102, 19);
   padding: 24px 0;
 }
 
@@ -267,6 +280,7 @@ body {
   display: none;
 }
 
+
 /*CONTAT*/
 
 #contact {
@@ -276,20 +290,9 @@ body {
   font-size: 2em;
 }
 
-.contact-content, .contact-content a {
+.contact-content,
+.contact-content a {
   color: rgba(255, 255, 255, 0.7);
-}
-
-/*FOOTER*/
-
-#footer {
-  background-image: url('../img/bar_night.jpeg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  height: 400px;
-  text-align: center;
-  vertical-align: bottom;
 }
 
 @media (max-width: 1400px) {
@@ -308,8 +311,10 @@ body {
   .mobile-consulting {
     display: block;
   }
-  .for-sellers-list, .for-buyers-list, .consulting-list {
-    padding-bottom: 40px;
+  .for-sellers-list,
+  .for-buyers-list,
+  .consulting-list {
+    padding: 48px 36px 48px;
   }
   .mailer-form h3 {
     display: block;
@@ -320,7 +325,8 @@ body {
   .hero-header {
     padding-left: 8px;
   }
-  #about, #broker {
+  #about,
+  #broker {
     padding: 80px 16px;
   }
   .desktop-form {
@@ -329,7 +335,7 @@ body {
   .mobile-form {
     display: block;
   }
-  .mailer-form input[type="email"]{
+  .mailer-form input[type="email"] {
     width: 80%;
     margin: 16px 0;
   }

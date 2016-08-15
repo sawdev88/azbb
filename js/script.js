@@ -19,6 +19,7 @@ $('body').on('click', hideNav );
 // Flash down arrow
 $('.down-arrow').delay(1000).fadeIn(1000).delay(500).fadeOut('slow');
 
+// Set Parallax effects
 $('body').scroll(function () {
   var pos = $(this).offset().top;
 
@@ -30,7 +31,7 @@ $('body').scroll(function () {
     $('.consulting-list').addClass('fade-in');
   }
 
-  if (pos > ($('.consulting-content').offset().top - 500)) {
+  if (pos > ($('.consulting-content').offset().top - 360)) {
     $('.for-buyers-list').addClass('fade-in');
   }
 })
