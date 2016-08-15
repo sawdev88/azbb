@@ -60,6 +60,7 @@ body {
   background: #000;
   transition: .1s;
   z-index: 1002;
+  overflow-y: scroll;
 }
 
 .nav-list {
@@ -305,6 +306,9 @@ body {
 }
 
 @media (max-width: 990px) {
+  #about {
+    text-align: center;
+  }
   .desktop-consulting {
     display: none;
   }
@@ -339,4 +343,11 @@ body {
     width: 80%;
     margin: 16px 0;
   }
+}
+
+@media (max-width: 350px) {
+  .hero-header {
+    margin-top: 48px;
+  }
+
 }
