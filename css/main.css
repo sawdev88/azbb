@@ -203,7 +203,7 @@ body {
   color: rgb(195, 102, 19);
 }
 
-.mobile-consulting {
+.mobile-buyers {
   display: none;
 }
 
@@ -229,9 +229,17 @@ body {
 
 .broker-img {
   margin-bottom: 48px;
+  font-size: 6em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.broker-img img {
+  border-radius: 50%;
+  max-width: 240px;
 }
 
 .broker-content {
+  margin-top: 64px;
   font-size: 2em;
 }
 
@@ -309,10 +317,10 @@ body {
   #about {
     text-align: center;
   }
-  .desktop-consulting {
+  .desktop-buyers {
     display: none;
   }
-  .mobile-consulting {
+  .mobile-buyers {
     display: block;
   }
   .for-sellers-list,
@@ -328,6 +336,9 @@ body {
 @media (max-width:480px) {
   .hero-header {
     padding-left: 8px;
+  }
+  .nav-list {
+    margin-top: 48px;
   }
   #about,
   #broker {
@@ -348,6 +359,9 @@ body {
 @media (max-width: 350px) {
   .hero-header {
     margin-top: 48px;
+  }
+  .email {
+    font-size: .8em;
   }
 
 }

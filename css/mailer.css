@@ -1,0 +1,41 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+body {
+  background: url('../img/lights.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  margin-top: 180px;
+}
+
+h3 {
+  margin-bottom: 32px;
+}
+
+span {
+  font-size: 4em;
+}
+
+a, span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+a:hover, span:hover {
+  color: #fff;
+}
