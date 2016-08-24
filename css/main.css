@@ -92,9 +92,50 @@ body {
 }
 
 
+/*OVERLAY*/
+
+.overlay {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: rgba(0, 0, 0, .9);
+  text-align: center;
+  z-index: 2001;
+  padding: 24px;
+  display: none;
+}
+
+.overlay-content {
+  padding: 80px;
+  border: 3px solid #fff;
+  display: inline-block;
+}
+
+.overlay-content h2 {
+  margin-bottom: 16px;
+}
+
+.hide-overlay {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.overlay-button {
+  background: #fff;
+  border: none;
+  color: #000;
+  margin-top: 16px;
+  padding: 16px 32px;
+}
+
+
 /*HERO*/
 
 .hero {
+  position: relative;
   margin-top: 38%;
   background: rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -334,6 +375,15 @@ body {
 }
 
 @media (max-width:480px) {
+  .overlay {
+    top : 80px;
+    left: 16px;
+    right: 16px;
+    transform: none;
+  }
+  .overlay-content {
+    padding: 8px;
+  }
   .hero-header {
     padding-left: 8px;
   }
